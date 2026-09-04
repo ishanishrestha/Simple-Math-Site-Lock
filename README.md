@@ -77,7 +77,7 @@ Administrators with the required capability are allowed to bypass the lock.
 
 ## 🌍 Translation
 
-The plugin uses WordPress internationalization functions for user-facing strings, making the interface ready for translation.
+The plugin uses WordPress internationalization functions for user-facing strings which makes the interface ready for translation.
 
 For example, strings such as:
 
