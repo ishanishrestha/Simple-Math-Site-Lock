@@ -1,6 +1,6 @@
 === Simple Math Site Lock ===
 Contributors: ishanishestha
-Tags: site lock, math challenge, access control
+Tags: access control, content restriction, math, security
 Requires at least: 6.2
 Tested up to: 7.1
 Stable tag: 1.8
