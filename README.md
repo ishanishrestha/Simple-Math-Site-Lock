@@ -22,7 +22,7 @@ Visitors are asked to solve a randomly generated addition problem before they ca
 
 ## 🚀 Installation
 
-### Method 1 — Upload the plugin
+### Method I: Upload the plugin
 
 1. Download this repository as a ZIP file.
 2. In your WordPress dashboard, go to **Plugins → Add New Plugin**.
@@ -30,7 +30,7 @@ Visitors are asked to solve a randomly generated addition problem before they ca
 4. Upload the ZIP file.
 5. Install and activate **Simple Math Site Lock**.
 
-### Method 2 — Manual installation
+### Method II: Manual installation
 
 1. Download or clone this repository.
 2. Place the `simple-math-site-lock` folder inside:
