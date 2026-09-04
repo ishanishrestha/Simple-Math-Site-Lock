@@ -7,6 +7,7 @@ Visitors are asked to solve a randomly generated addition problem before they ca
 ## 🎬 Demo
 
 Try the plugin on my website:
+
 View Live Demo: https://ishanishrestha.com.np
 
 ## ✨ Features
