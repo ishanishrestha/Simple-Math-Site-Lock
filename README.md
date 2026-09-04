@@ -4,6 +4,11 @@ A lightweight WordPress plugin that protects website access with a simple math c
 
 Visitors are asked to solve a randomly generated addition problem before they can access the website. Administrators can bypass the lock and access the WordPress dashboard normally.
 
+## 🎬 Demo
+
+Try the plugin on my website:
+View Live Demo: https://ishanishrestha.com.np
+
 ## ✨ Features
 
 * 🔢 **Random math challenges** — Generates a new addition question for visitors.
