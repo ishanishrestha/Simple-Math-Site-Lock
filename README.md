@@ -42,7 +42,8 @@ Once activated, visitors to the website will be presented with the math challeng
 
 ## 📁 Project Structure
 
-`simple-math-site-lock/
+```text
+simple-math-site-lock/
 │
 ├── simple-math-site-lock.php    # Main plugin file
 ├── README.md                    # GitHub documentation
@@ -52,7 +53,8 @@ Once activated, visitors to the website will be presented with the math challeng
 │   └── style.css                # Lock page styling
 │
 └── templates/
-    └── lock-page.php            # Lock page template`
+    └── lock-page.php            # Lock page template
+```
 
 
 ## 🔒 How It Works
