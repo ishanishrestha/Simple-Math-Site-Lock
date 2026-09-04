@@ -16,6 +16,10 @@ Locks website access until visitors correctly answer a simple math question.
 
 Simple Math Site Lock restricts access to the public website until visitors correctly solve a randomly generated math question.
 
+== Demo ==
+
+Try Simple Math Site Lock on the author's website: https://ishanishrestha.com.np
+
 Features include:
 
 * Random math challenges
