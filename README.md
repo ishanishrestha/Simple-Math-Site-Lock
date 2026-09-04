@@ -82,11 +82,7 @@ For example, strings such as:
 * `Enter your answer`
 * `Continue`
 
-are prepared for translation using the plugin's text domain:
-
-```text
-is-smsl
-```
+are prepared for translation using the plugin's text domain `is-smsl`.
 
 Additional translation files can be added in the future.
 
