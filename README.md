@@ -33,12 +33,7 @@ Visitors are asked to solve a randomly generated addition problem before they ca
 ### Method II: Manual installation
 
 1. Download or clone this repository.
-2. Place the `simple-math-site-lock` folder inside:
-
-```text
-wp-content/plugins/
-```
-
+2. Place the `simple-math-site-lock` folder inside `wp-content/plugins/`
 3. Go to **WordPress Dashboard → Plugins**.
 4. Find **Simple Math Site Lock**.
 5. Click **Activate**.
@@ -47,8 +42,7 @@ Once activated, visitors to the website will be presented with the math challeng
 
 ## 📁 Project Structure
 
-```text
-simple-math-site-lock/
+`simple-math-site-lock/
 │
 ├── simple-math-site-lock.php    # Main plugin file
 ├── README.md                    # GitHub documentation
@@ -58,8 +52,8 @@ simple-math-site-lock/
 │   └── style.css                # Lock page styling
 │
 └── templates/
-    └── lock-page.php            # Lock page template
-```
+    └── lock-page.php            # Lock page template`
+
 
 ## 🔒 How It Works
 
