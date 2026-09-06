@@ -112,7 +112,7 @@ Simple Math Site Lock is free software licensed under the **GNU General Public L
 
 See the `LICENSE` information and `readme.txt` for additional details.
 
-## 👩‍💻 Author
+## Author
 
 **Ishani**
 
