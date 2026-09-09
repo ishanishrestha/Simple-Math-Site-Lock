@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Simple Math Site Lock
-Plugin URL: https://github.com/ishanishrestha/Simple-Math-Site-Lock.git
+Plugin URI: https://github.com/ishanishrestha/Simple-Math-Site-Lock.git
 Description: Locks your WordPress site behind a simple math CAPTCHA, requiring visitors to solve a math question before accessing the site.
 Requires at least: 6.2
 Tested up to: 7.1
@@ -48,30 +48,36 @@ function smsl_show_math_lock() {
     }
 
     // Check whether this browser has already solved the math question.
-    if (
-        isset($_COOKIE['smsl_session_unlocked']) &&
-        hash_equals(
-            hash_hmac('sha256', 'unlocked', wp_salt('auth')),
-            $_COOKIE['smsl_session_unlocked']
-        )
-    ) {
-        return;
-    }
+   if (
+    isset( $_COOKIE['smsl_session_unlocked'] ) &&
+    hash_equals(
+        hash_hmac( 'sha256', 'unlocked', wp_salt( 'auth' ) ),
+        sanitize_text_field( wp_unslash( $_COOKIE['smsl_session_unlocked'] ) )
+    )
+) {
+    return;
+}
 
     // If the user submitted an answer, process it. 
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    
+   if (isset( $_SERVER['REQUEST_METHOD'] ) && 'POST' === sanitize_text_field( wp_unslash( $_SERVER['REQUEST_METHOD'] ) )) 
+    {
 
-        // Check that the nonce exists and is valid.
-        if (
-            !isset($_POST['smsl_nonce']) ||
-            !wp_verify_nonce(
-                sanitize_text_field(wp_unslash($_POST['smsl_nonce'])),
-                'smsl_math_lock'
+    // Check that the nonce exists and is valid.
+    if (
+        ! isset( $_POST['smsl_nonce'] ) ||
+        ! wp_verify_nonce(
+            sanitize_text_field( wp_unslash( $_POST['smsl_nonce'] ) ),
+            'smsl_math_lock'
+        )
+    ) {
+        wp_die(
+            esc_html__(
+                'Security check failed. Please refresh the page and try again.',
+                'simple-math-site-lock'
             )
-        ) {
-             wp_die(esc_html('Security check failed. Please refresh the page and try again.', 'simple-math-site-lock'));
-        }
-
+        );
+    }
         // Get the challenge ID.
         $challenge_id = isset($_POST['challenge_id'])
             ? sanitize_text_field(wp_unslash($_POST['challenge_id']))
@@ -81,8 +87,8 @@ function smsl_show_math_lock() {
         $correct_answer = get_transient('smsl_' . $challenge_id);
 
         // Get the answer entered by the visitor.
-        $user_answer = isset($_POST['math_answer'])
-            ? absint($_POST['math_answer'])
+        $user_answer = isset( $_POST['math_answer'] )
+            ? absint( wp_unslash( $_POST['math_answer'] ) )
             : -1;
 
         // Check that the challenge exists and that the user's answer is correct.  
