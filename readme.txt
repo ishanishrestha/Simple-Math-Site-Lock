@@ -1,4 +1,4 @@
-=== Simple Math Site Lock ===
+=== Simple Math Site Lock – Protect Your WordPress Site with a Math CAPTCHA ===
 Contributors: ishanishr
 Tags: access control, content restriction, math, security
 Requires at least: 6.2
@@ -9,7 +9,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: simple-math-site-lock
 
-Locks website access until visitors correctly answer a simple math question.
+Locks your WordPress site behind a simple math CAPTCHA, requiring visitors to solve a math question before accessing the site.
 
 
 == Description ==
