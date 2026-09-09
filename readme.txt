@@ -57,8 +57,8 @@ No. The WordPress admin area and login page are excluded from the lock.
 
 = Version 1.8 =
 
-* Made user-facing text translatable.
-* Improved internationalization by using WordPress translation functions.
+* Added translation support with a text domain for localization.
+* Improved compatibility with WordPress localization tools.
 
 = Version 1.7 =
 
