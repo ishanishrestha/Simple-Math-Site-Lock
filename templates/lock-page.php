@@ -1,11 +1,14 @@
+<?php 
+defined( 'ABSPATH' ) || exit;
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 <head>
-<meta charset="UTF-8">
+<meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Access Required</title>
+<meta name="robots" content="noindex, nofollow">
+<title><?php esc_html_e( 'Access Required', 'simple-math-site-lock' ); ?></title>
 <?php wp_head(); ?>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body class="smsl-lock-page">
 <div class="card">
