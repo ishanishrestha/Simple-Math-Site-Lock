@@ -2,7 +2,7 @@
 /*
 Plugin Name: Simple Math Site Lock
 Plugin URL: https://github.com/ishanishrestha/Simple-Math-Site-Lock.git
-Description: Locks the site until a simple math question is answered.
+Description: Locks your WordPress site behind a simple math CAPTCHA, requiring visitors to solve a math question before accessing the site.
 Requires at least: 6.2
 Tested up to: 7.1
 Version: 1.8
