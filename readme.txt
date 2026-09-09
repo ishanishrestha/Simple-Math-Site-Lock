@@ -1,5 +1,5 @@
 === Simple Math Site Lock ===
-Contributors: ishanishestha
+Contributors: ishanishr
 Tags: access control, content restriction, math, security
 Requires at least: 6.2
 Tested up to: 7.1
@@ -7,7 +7,7 @@ Stable tag: 1.8
 Requires PHP: 8.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: pt-pmdi
+Text Domain: is-smsl
 
 Locks website access until visitors correctly answer a simple math question.
 
