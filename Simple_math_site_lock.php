@@ -1,18 +1,17 @@
 <?php
 /*
 Plugin Name: Simple Math Site Lock
-Plugin URL: (github)
+Plugin URL: https://github.com/ishanishrestha/Simple-Math-Site-Lock.git
 Description: Locks the site until a simple math question is answered.
 Requires at least: 6.2
 Tested up to: 7.1
 Version: 1.8
-Stable tag: 1.8
 Requires PHP: 8.0
 Author: Ishani
 Author URI: https://ishanishrestha.com.np
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: is-smsl
+Text Domain: simple-math-site-lock
 */
 
 if (!defined('ABSPATH')) {
@@ -70,7 +69,7 @@ function smsl_show_math_lock() {
                 'smsl_math_lock'
             )
         ) {
-            wp_die(__('Security check failed. Please refresh the page and try again.', 'is-smsl'));
+             wp_die(esc_html('Security check failed. Please refresh the page and try again.', 'simple-math-site-lock'));
         }
 
         // Get the challenge ID.
@@ -109,7 +108,7 @@ function smsl_show_math_lock() {
             exit;
         }
 
-        $error_message = __('Incorrect answer. Please try again.', 'is-smsl');
+        $error_message = __('Incorrect answer. Please try again.', 'simple-math-site-lock');
     }
 
     // Create a new math question. 
