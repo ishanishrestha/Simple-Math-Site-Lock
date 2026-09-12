@@ -1,4 +1,4 @@
-# Simple Math Site Lock 🔒
+# Mathlock Guard 🔒
 
 A lightweight WordPress plugin that protects website access with a simple math challenge.
 
@@ -34,14 +34,14 @@ View Live Demo: https://ishanishrestha.com.np
 2. In your WordPress dashboard, go to **Plugins → Add New Plugin**.
 3. Select **Upload Plugin**.
 4. Upload the ZIP file.
-5. Install and activate **Simple Math Site Lock**.
+5. Install and activate **Mathlock Guard**.
 
 ### Method II: Manual installation
 
 1. Download or clone this repository.
-2. Place the `simple-math-site-lock` folder inside `wp-content/plugins/`
+2. Place the `mathlock-guard` folder inside `wp-content/plugins/`
 3. Go to **WordPress Dashboard → Plugins**.
-4. Find **Simple Math Site Lock**.
+4. Find **Mathlock Guard**.
 5. Click **Activate**.
 
 Once activated, visitors to the website will be presented with the math challenge.
@@ -49,9 +49,9 @@ Once activated, visitors to the website will be presented with the math challeng
 ## Project Structure
 
 ```text
-simple-math-site-lock/
+mathlock-guard/
 │
-├── simple-math-site-lock.php    # Main plugin file
+├── mathlock-guard.php           # Main plugin file
 ├── README.md                    # GitHub documentation
 ├── readme.txt                   # WordPress.org plugin information
 │
@@ -61,7 +61,6 @@ simple-math-site-lock/
 └── templates/
     └── lock-page.php            # Lock page template
 ```
-
 
 ## How It Works
 
@@ -88,7 +87,7 @@ For example, strings such as:
 * `Enter your answer`
 * `Continue`
 
-are prepared for translation using the plugin's text domain `is-smsl`.
+are prepared for translation using the plugin's text domain `mathlock-guard`.
 
 Additional translation files can be added in the future.
 
@@ -105,10 +104,9 @@ After making changes:
 5. Check the lock page on different screen sizes.
 6. Review the changelog before creating a release.
 
-
 ## License
 
-Simple Math Site Lock is free software licensed under the **GNU General Public License v2 or later (GPLv2+)**.
+Mathlock Guard is free software licensed under the **GNU General Public License v2 or later (GPLv2+)**.
 
 See the `LICENSE` information and `readme.txt` for additional details.
 
@@ -117,5 +115,3 @@ See the `LICENSE` information and `readme.txt` for additional details.
 **Ishani**
 
 Developed as a WordPress plugin project.
-
-
