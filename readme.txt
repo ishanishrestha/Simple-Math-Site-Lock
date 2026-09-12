@@ -1,30 +1,29 @@
-=== Simple Math Site Lock – Protect Your WordPress Site with a Math CAPTCHA ===
+=== Mathlock Guard – Protect Your Site with a Math CAPTCHA ===
 Contributors: ishanishr
-Tags: access control, content restriction, math, security
+Tags: captcha, bot protection, spam prevention, access control, math captcha
 Requires at least: 6.2
 Tested up to: 7.1
 Stable tag: 1.8
 Requires PHP: 8.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: simple-math-site-lock
+Text Domain: mathlock-guard
 
-Locks your WordPress site behind a simple math CAPTCHA, requiring visitors to solve a math question before accessing the site.
-
+Protects your site with a lightweight math CAPTCHA, requiring visitors to solve a simple question before accessing your content.
 
 == Description ==
 
-Simple Math Site Lock restricts access to the public website until visitors correctly solve a randomly generated math question.
+Mathlock Guard protects your site's public-facing content behind a lightweight math verification challenge. Visitors must correctly answer a simple arithmetic question before accessing your pages, providing an accessible, low-friction alternative to traditional CAPTCHA systems. Site administrators and the login page remain fully accessible at all times, ensuring uninterrupted site management, while all other visitors, including logged-in users such as editors, authors, and subscribers, are required to pass the verification screen.
 
 == Demo ==
 
-Try Simple Math Site Lock on the author's website: https://ishanishrestha.com.np
+Try Mathlock Guard on the author's website: https://ishanishrestha.com.np
 
 Features include:
 
 * Random math challenges
 * Administrator bypass
-* WordPress admin and login page exclusions
+* Admin dashboard and login page exclusions
 * Nonce verification for form submissions
 * Server-side challenge storage
 * Temporary unlock functionality
@@ -32,7 +31,7 @@ Features include:
 
 == Installation ==
 
-1. Upload the `simple-math-site-lock` folder to the `/wp-content/plugins/` directory.
+1. Upload the `mathlock-guard` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the WordPress Plugins menu.
 3. Visit the website to test the math lock.
 
@@ -89,7 +88,7 @@ No. The WordPress admin area and login page are excluded from the lock.
 = Version 1.2 = 
 
 * Added an administrator bypass using the `manage_options` capability.
-* Excluded the WordPress admin area and login page from the site lock.
+* Excluded the admin dashboard and login page from the mathlock.
 
 = Version 1.1 = 
 
