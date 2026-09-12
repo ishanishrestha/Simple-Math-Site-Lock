@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Mathlock Guard
-Plugin URI: https://github.com/ishanishrestha/mathlock-guard.git
+Plugin URI: https://github.com/ishanishrestha/Mathlock-Guard.git
 Description: Protects your site with a lightweight math CAPTCHA, requiring visitors to solve a simple question before accessing your content.
 Requires at least: 6.2
 Requires PHP: 8.0
