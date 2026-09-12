@@ -23,7 +23,9 @@ add_action('wp_enqueue_scripts', 'mlg_enqueue_styles');
 function mlg_enqueue_styles() {
     wp_enqueue_style(
         'mlg-style',
-        plugin_dir_url(__FILE__) . 'assets/style.css'
+        plugin_dir_url(__FILE__) . 'assets/style.css',
+        array(),
+        '1.8'
     );
 }
 
