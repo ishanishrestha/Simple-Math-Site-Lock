@@ -1,4 +1,4 @@
-=== Mathlock Guard – Protect Your Site with a Math CAPTCHA ===
+=== Mathlock Guard ===
 Contributors: ishanishr
 Tags: captcha, bot protection, spam prevention, access control, math captcha
 Requires at least: 6.2
